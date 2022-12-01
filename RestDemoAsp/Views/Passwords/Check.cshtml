@@ -1,0 +1,8 @@
+﻿@model RestDemoAsp.ViewModels.PasswordViewModel
+<h2>Inserisci la password</h2>
+@using (Html.BeginForm())
+{
+    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+    <input type="submit" value="Verifica" class="btn btn-default" />
+}
+
